@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shrine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_user">Nome de Usuário</string>
+    <string name="hint_password">Senha</string>
+    <string name="bt_cancel">Cancelar</string>
+    <string name="bt_Next">Próximo</string>
+    <string name="tab_carrinho">Carrinho</string>
+    <string name="tab_fav">Favoritos</string>
+    <string name="tab_pay">Pagamento</string>
+    <string name="text_pay">Bitch Better Have My Money</string>
+    <string name="text_prefer">Preferidos</string>
+    <string name="text_desires">Estou querendo</string>
+    <string name="image_shell">desenho de uma concha</string>
+    <string name="bt_calculator">Calculadora de IMC</string>
+    <string name="hint_peso">Peso (Kg)</string>
+    <string name="hint_altura">Altura (m)</string>
+    <string name="hint_title">Cálculo do IMC</string>
+    <string name="hint_subtitle">Descubra seu índice de Massa Corporal</string>
+    <string name="button_calculate">Calcular</string>
+</resources>
