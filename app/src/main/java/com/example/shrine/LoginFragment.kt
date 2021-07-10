@@ -24,7 +24,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.btNext?.setOnClickListener{
-            findNavController().navigate(R.id.action_loginFragment_to_productsFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_productGridFragment)
         }
     }
 

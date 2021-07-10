@@ -10,8 +10,8 @@
         android:name="com.example.shrine.LoginFragment"
         android:label="LoginFragment" >
         <action
-            android:id="@+id/action_loginFragment_to_productsFragment"
-            app:destination="@id/productsFragment" />
+            android:id="@+id/action_loginFragment_to_productGridFragment"
+            app:destination="@id/productGridFragment" />
     </fragment>
     <fragment
         android:id="@+id/productsFragment"
@@ -45,4 +45,13 @@
         android:name="com.example.shrine.CalculadoraFragment"
         android:label="fragment_calculadora"
         tools:layout="@layout/fragment_calculadora" />
+    <fragment
+        android:id="@+id/productGridFragment"
+        android:name="com.example.shrine.ProductGridFragment"
+        android:label="fragment_product_grid"
+        tools:layout="@layout/fragment_product_grid" >
+        <action
+            android:id="@+id/action_productGridFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
 </navigation>

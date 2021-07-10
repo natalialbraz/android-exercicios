@@ -19,4 +19,24 @@
     <string name="hint_title">Cálculo do IMC</string>
     <string name="hint_subtitle">Descubra seu índice de Massa Corporal</string>
     <string name="button_calculate">Calcular</string>
+    <string name="vagabond_sack">Vagabond sack</string>
+    <string name="price_sack">$120</string>
+    <string name="stella_sunglasses">Stella sunglasses</string>
+    <string name="price_stella">$58</string>
+    <string name="string_belt">Whitney belt</string>
+    <string name="price_belt">$35</string>
+    <string name="string_strand">Garden strand</string>
+    <string name="price_strand">$98</string>
+    <string name="string_earring">Strut earring</string>
+    <string name="price_earrings">$34</string>
+    <string name="string_socks">Varsity socks</string>
+    <string name="price_socks">$22</string>
+    <string name="content_description_favorite">botao para os itens favoritos</string>
+    <string name="favorite">Favoritos</string>
+    <string name="search">Search</string>
+    <string name="content_description_search">botao pesquisar</string>
+    <string name="content_description_more">botao mais opções</string>
+    <string name="more">More</string>
+    <string name="logo_nome">Shrine Store</string>
+    <string name="description_logo">silhueta de uma sereia</string>
 </resources>
