@@ -19,8 +19,8 @@
         android:label="fragment_products"
         tools:layout="@layout/fragment_products" >
         <action
-            android:id="@+id/action_productsFragment_to_favoritesFragment"
-            app:destination="@id/favoritesFragment" />
+            android:id="@+id/action_productsFragment_to_calculadoraFragment"
+            app:destination="@id/calculadoraFragment" />
     </fragment>
     <fragment
         android:id="@+id/initialFragment"
@@ -30,15 +30,6 @@
         <action
             android:id="@+id/action_initialFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/favoritesFragment"
-        android:name="com.example.shrine.FavoritesFragment"
-        android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" >
-        <action
-            android:id="@+id/action_favoritesFragment_to_calculadoraFragment"
-            app:destination="@id/calculadoraFragment" />
     </fragment>
     <fragment
         android:id="@+id/calculadoraFragment"

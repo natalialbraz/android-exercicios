@@ -23,54 +23,22 @@ class ProductsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // usado quando nao haviamos implementado a viewPager
-        //goToFragment(FavoritesFragment())
 
         val fragmentsList = listOf(FavoritesFragment(), BagFragment(), PaymentFragment())
         val fragmentsTitleList = listOf("Favoritos", "Carrinho", "Pagamento")
 
      // so inicia o ViewPager se a Activity for diferente de nulo
-        activity?.let {
-            val viewPagerAdapter = ViewPagerAdapter(
-                fragmentManager = it.supportFragmentManager,
-                fragmentsList = fragmentsList,
-                fragmentsTitleList = fragmentsTitleList
-            )
-            binding?.let { bindingNonNull ->
-                with(bindingNonNull) {
-                    container.adapter = viewPagerAdapter
-                    tlProductsTabs.setupWithViewPager(container)
-                }
+        val viewPagerAdapter = ViewPagerAdapter(
+            fragmentsList,
+            fragmentsTitleList,
+            childFragmentManager
+        )
+        binding?.let { bindingNonNull ->
+            with(bindingNonNull) {
+                container.adapter = viewPagerAdapter
+                tlProductsTabs.setupWithViewPager(container)
             }
         }
-
-
-        // USADO ANTES DA IMPLEMENTAÇÃO DA VIEWPAGER
-        /*binding?.tlProductsTabs?.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when(tab?.position){
-                    0 -> {
-                        goToFragment(FavoritesFragment())
-                    }
-                    1 -> {
-                        goToFragment(BagFragment())
-                    }
-                    2 -> {
-                        goToFragment(PaymentFragment())
-                    }
-
-                }
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-
-            }
-
-        })*/
     }
 
    /* fun goToFragment(fragment: Fragment){

@@ -22,8 +22,7 @@ class FavoritesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.btIMC?.setOnClickListener{
-            findNavController().navigate(R.id.action_productsFragment_to_favoritesFragment)
-            findNavController().navigate(R.id.action_favoritesFragment_to_calculadoraFragment)
+            findNavController().navigate(R.id.action_productsFragment_to_calculadoraFragment)
         }
     }
 
